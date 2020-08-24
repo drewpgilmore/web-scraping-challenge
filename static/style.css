@@ -1,0 +1,16 @@
+h1 {
+    color: black;
+}
+
+#hemispheres img {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+#featured_image {
+    max-width: 90%;
+}
+
+#hemisphere_headline {
+    text-align: center;
+}

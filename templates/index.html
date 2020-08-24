@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     
     <title>Mars Facts</title>
   </head>
@@ -37,14 +37,14 @@
         </div>
         <div class="row">
             <div class="col-md-8">
-                <img src="{{dict.featured_image_url}}" alt="jpl image">
+                <img src="{{dict.featured_image_url}}" alt="jpl image" id="featured_image">
             </div>
             <div class="col-md-4">
                 {{dict.mars_facts_html | safe}}
             </div>
         </div>
         
-        <div class="row">
+        <div class="row" id="hemisphere_headline">
             <h1>Mars Hemispheres</h1>
         </div>        
         
